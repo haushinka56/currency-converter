@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="charset" content="width=device-width, initial-sclae=1.0" />
 
-    <title>Conversor de moedas</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,34 +14,63 @@
     />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
     <div class="container">
-      <h1 class="page-title">Conversor de moedas</h1>
+      <h1 class="page-title">Currency Converter</h1>
       <img
-        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
         class="page-logo"
-        alt=""
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+        alt="Logo imersão Alura"
       />
-    </div>
-    <a href="https://alura.com.br/" target="_blank">
-      <img
-        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
-        alt=""
-        class="alura-logo"
-    /></a>
-    <form>
-      <input type="number" placeholder="dolar (USD)" id="dollar" />
-      <input type="number" placeholder="euro (EUR)" id="euro" />
-      <input type="number" placeholder="real (BRL)" id="real" />
-      <br />
-      <button type="submit" id="submit">Converter</button>
-    </form>
 
+      <a href="https://alura.com.br/" target="_blank">
+        <img
+          class="alura-logo"
+          src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+          alt="Logo Alura"
+      /></a>
+
+      <form>
+        <input
+          class="input"
+          type="text"
+          placeholder="1"
+          value="1"
+          readonly
+          id="dollarRate"
+        />
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter EUR Rate"
+          id="euroRate"
+        />
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter BRL Rate"
+          id="realRate"
+        />
+        <br />
+        <input
+          class="input"
+          type="text"
+          placeholder="Dollar (USD)"
+          id="dollar"
+        />
+        <input class="input" type="text" placeholder="Euro (EUR)" id="euro" />
+        <input class="input" type="text" placeholder="Real (BRL)" id="real" />
+        <br />
+        <button class="button" type="submit" id="submit">Convert</button>
+      </form>
+
+      <div class="results" id="results">
+        <p class="output" id="output"></p>
+      </div>
+    </div>
     <img
       src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png"
     />
 
-    <!-- partial -->
     <script src="script.js"></script>
   </body>
 </html>

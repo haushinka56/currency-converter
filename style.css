@@ -15,32 +15,6 @@ body {
   height: 100vh;
 }
 
-.container {
-  text-align: center;
-  padding: 20px;
-}
-
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
-}
-
-.page-logo {
-  width: 200px;
-}
-
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 body > img {
   margin: 0 10px;
 }
@@ -49,7 +23,28 @@ img {
   max-height: 250px;
 }
 
-input {
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.container .page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.container .page-logo {
+  width: 200px;
+}
+
+.container .alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container .input {
   font-size: 14px;
   text-align: center;
   padding: 10px;
@@ -59,17 +54,31 @@ input {
   color: #15477f;
 }
 
-button {
+.container .button {
   font-size: 18px;
   padding: 15px;
   margin: 20px;
   margin-bottom: 0;
   border-radius: 7px;
-
   background-color: #60c0f4;
   color: #15477f;
 }
 
-button:hover {
+.container .button:hover {
   background-color: #bfe6fb;
+}
+
+.container .results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 0;
+  max-width: 280px;
+  height: 100px;
+  background-color: #14447c;
+  border-radius: 7px;
+}
+
+.container .output {
+  color: #bfe6fb;
 }
